@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leaf. Good quality plants only!</title>
+    <link rel="stylesheet" href="sass/css/imports.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div class="overlay">
+            <!-- width des SVG deswegen im HTML angegeben, damit es in der HTML Ansicht nicht so riesig angezeigt wird -->
+            <svg class="overlay_leave" enable-background="new 0 0 87.8 95" viewBox="0 0 87.8 95" xmlns="http://www.w3.org/2000/svg"><path d="m47.1 78.1c6.4-11.3 12.1-23.3 12.1-36.2-2.4 8.9-6.4 19.3-10.5 27.4 0 .8-.8 2.4-1.6 3.2z" fill="none"/><path d="m34.9 37.8c-.3-.5-.6-1-1-1.4-5.7-8.3-13.4-14.8-24.8-17.9-16.8 32.1 9.8 65.4 33.1 74.4-22.5-18.3-25.1-59-22.5-46.7 2.2 10.8 18.2 37.8 23.1 46 .2-.7.4-1.4.6-2.1 4.8-17.1 1.5-37.1-8.5-52.3z" fill="#42836b"/><path d="m78.5 1.6c-23 7.9-35 21.3-41.6 34.8.3.5.6 1 1 1.4 6.8 10.3 10.5 22.8 10.7 35.1 6.6-11.5 15.6-28 17.2-35.8 2.3-11.3.4 22.1-17.4 41.8-.3 3.8-.9 7.5-1.9 11.2 18.3-9.8 54.6-37.8 32-88.5z" fill="#364558"/>
+            </svg>        
+            <svg class="overlay_color" enable-background="new 0 0 15 10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h15.1v15h-15.1z" fill="#070E1A"/>
+            </svg>
+
+            <div class="loader">
+                <span class="loader__element"></span>
+                <span class="loader__element"></span>
+                <span class="loader__element"></span>
+          </div>
+        </div>
+
+        <div class="wrapper_header"> 
+            <div class="wrapper_nav">
+                <a href="index.html">
+                    <span class="visually-hidden">Leaf. Homepage</span>
+                    <!-- width des SVG deswegen im HTML angegeben, damit es in der HTML Ansicht nicht so riesig angezeigt wird -->
+                        <svg enable-background="new 0 0 35.9 11.5" viewBox="0 0 35.9 11.5" width="100" xmlns="http://www.w3.org/2000/svg"><path d="m35 0c-2.9 1-4.4 2.7-5.2 4.5.2.3.4.5.5.8.6 1.4.7 2.8.6 4 .1-.3.3-.6.4-.9.3-.5.5-1.1.7-1.7s.5-1.1.6-1.7c0 .6-.1 1.2-.3 1.8s-.4 1.2-.7 1.7c-.3.6-.5 1.1-.9 1.6 0 .1-.1.1-.1.2-.1.4-.2.7-.2 1 2.1-.9 7.7-4.5 4.6-11.3z" fill="#364558"/><path d="m28.5 9.3c-.2-.5-.4-1-.5-1.5s-.2-1-.2-1.6c.2.5.4 1 .6 1.4.2.5.4.9.6 1.4l.6 1.4c.2.3.3.7.4 1 .3-.9.9-3.6-.2-6-.7-1.5-2-2.6-3.9-3.3-.8 1.8-.9 3.6-.3 5.1.9 2.4 3.3 3.8 4.2 4.2-.2-.3-.4-.6-.6-.9s-.4-.8-.7-1.2z" fill="#42836b"/><path d="m0 2.2h1.8v7.1h4.3v1.6h-6.1z"/><path d="m11.4 4.6c.4.2.8.5 1.1.9s.4.8.5 1.3v1.3h-4.6c0 .6.2 1.1.7 1.3.2.2.5.3.9.3s.7-.1.9-.3c.1-.1.2-.2.3-.4h1.7c0 .4-.3.8-.6 1.2-.6.6-1.4.9-2.4.9-.9 0-1.6-.3-2.2-.8s-1-1.4-1-2.6c0-1.1.3-2 .9-2.5.6-.6 1.3-.9 2.3-.9.5 0 1 .1 1.5.3zm-2.5 1.4c-.3.3-.4.6-.5 1h2.9c0-.4-.2-.8-.4-1s-.6-.3-1-.3c-.5 0-.8.1-1 .3z"/><path d="m16.4 7c.3 0 .5-.1.7-.1.2-.1.4-.3.4-.5 0-.3-.1-.4-.3-.5s-.5-.1-.8-.1c-.4 0-.7.1-.8.3-.1.1-.2.3-.2.6h-1.6c0-.6.2-1 .5-1.4.4-.6 1.2-.8 2.3-.8.7 0 1.3.1 1.9.4s.8.8.8 1.6v2.9.7c0 .2 0 .4.1.4s.1.1.2.2v.2h-1.8c-.1-.1-.1-.2-.1-.4s0-.2 0-.4c-.2.2-.5.5-.8.6-.4.2-.8.3-1.2.3-.6 0-1.1-.2-1.4-.5-.4-.3-.6-.8-.6-1.4 0-.8.3-1.4.9-1.7.3-.2.8-.3 1.5-.4zm1 .8c-.1.1-.2.1-.3.2s-.3 0-.5 0l-.4.1c-.4.1-.6.1-.8.2-.3.2-.4.4-.4.7s.1.5.2.6c.2.1.4.2.6.2.4 0 .7-.1 1-.3s.5-.6.5-1.2v-.5z"/><path d="m23.2 2.1h.4v1.4c-.1 0-.3 0-.5 0s-.4 0-.5.1-.1.3-.1.4 0 .3 0 .5h1.1v1.2h-1.1v5.2h-1.7v-5.2h-.9v-1.2h.9v-.4c0-.7.1-1.2.3-1.4.2-.4.8-.6 1.8-.6z"/>
+                    </svg>
+                </a>
+            
+                <nav>
+                    <ol>
+                        <li>
+                            <a href="#">
+                                Flowers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Plants
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Pots
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="my_details">
+                <ol>
+                    <li>
+                        <a href="#">
+                            My Account
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Wishlist
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Basket
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="background_header"> 
+
+            <div class="wrapper_leave_img"> 
+                <div class="leave">
+                    <!-- width des SVG deswegen im HTML angegeben, damit es in der HTML Ansicht nicht so riesig angezeigt wird -->
+                    <!-- <svg enable-background="new 0 0 178.1 403" width="100" viewBox="0 0 178.1 403" xmlns="http://www.w3.org/2000/svg"><g fill="#a0df93"><path d="m76.5 266.4s-24.1-10.6-47.8-4.8-24.3 17.3-24.3 17.3 27.4 17.4 72.1-12.5z"/><path d="m158 69.1c-17.6-9.7-38.4-8.7-45.1-8.1 9.8-30.6 17.9-60.4 18-60.6l-.9-.4c-.1.1-8.1 29.8-17.9 60.4-5.6-2.1-26.1-9-46.3-4-23.7 5.9-24.2 17.4-24.2 17.4s26.6 16.6 69.9-11.5c-2.9 9-5.9 17.9-8.9 26.2-6.4-2.4-26.2-8.6-45.6-3.7-23.8 5.8-24.4 17.3-24.4 17.3s26.2 16.3 68.8-10.8c-3.2 8.6-6.3 16.3-9.3 22.2-.1.3-.3.6-.4.9-4.1-1.2-26.6-7.1-47.3.3-23 8.2-22.4 19.7-22.4 19.7s28.4 14.1 69.1-18.8c-3.3 7.2-6.1 15.7-8.3 25.2-3.5-1.1-26.4-7.3-47.5.2-23 8.2-22.4 19.7-22.4 19.7s28.7 14.4 69.8-19.2c-2.4 10-4.2 20.9-5.5 32.2-5.2-1.5-26.8-6.7-46.8.4-23 8.1-22.4 19.7-22.4 19.7s28.4 14.2 69-18.6c-1 9.1-1.7 18.5-2.1 27.8-2.6-.8-26.1-7.5-47.8.2-23 8.2-22.4 19.7-22.4 19.7s28.9 14.5 70.1-19.5c-.5 12-.4 23.8.1 34.9-6.5-2.4-26.2-8.6-45.5-3.9-23.6 5.6-24.3 17.1-24.3 17.1s26.5 16.8 69.9-11.1c.3 4.9.7 9.7 1.2 14.2.4 3.8.6 7.5.6 11.1-.2-.1-.3-.1-.4-.2 0 0 .1.7.4 2-.2 8.5-1.4 16.4-3.3 23.4-3.9-1.6-25.7-9.8-47.1-4.5-23.7 5.8-24.3 17.3-24.3 17.3s27.1 17.2 71.2-11.9c-2.1 7.7-4.9 14.3-7.6 19.8-4.4-.4-27.5-1.8-46.3 9.4-21 12.4-18.2 23.6-18.2 23.6s30 8.3 63.2-30.4c-4.9 9.1-9.4 14.2-9.5 14.3l.5.4c-.4.4-24.3 23.7-30 35.4-6 11.7-8.6 38.7-8.6 38.7s24-20.1 33.8-40.1c9.4-19.4 5-33 4.7-33.9l.2.2c.1-.1 5.6-6.3 11.1-17.2-2 7-6.7 26.6-.8 45.4 7.3 23.2 18.9 23.1 18.9 23.1s15.5-28.3-16.9-70.7c2.6-5.3 5-11.7 6.9-18.9-.1 3.8-.1 27.4 12.5 45.9 13.8 20.1 24.8 16.6 24.8 16.6s6.5-31.7-37.2-62.9c1.5-5.9 2.6-12.3 3-19.3 2.4 8.5 8.3 25.2 21.2 37 17.9 16.5 27.9 10.6 27.9 10.6s-.7-31.8-48.9-52.4c0-3.8-.1-7.6-.6-11.6-.5-4.7-.9-9.6-1.2-14.8.3-.2.7-.5 1-.7 2.4 6.7 10.4 25.5 26.4 37.1 19.7 14.3 28.9 7.3 28.9 7.3s-4.4-32.2-56.1-46.9c0 0 .2.8.8 2.2-.2-.1-.6-.2-1-.4-.6-11.2-.6-23.2-.2-35.3 1.5 4.4 9.3 25.9 27 38.7 19.7 14.3 28.9 7.3 28.9 7.3s-4.4-32-55.8-46.8c.4-9.3 1.1-18.7 2.2-27.9 2.2 6.2 10.2 25.7 26.6 37.6 19.7 14.3 28.9 7.3 28.9 7.3s-4.4-31.8-55.2-46.6c1.3-10.6 3-20.8 5.2-30.1 1.8 5.4 9.8 25.8 26.8 38.2 19.7 14.3 28.9 7.3 28.9 7.3s-4.4-31.9-55.4-46.7c2.2-9.2 4.9-17.6 8-24.7 2.1 7.1 10.1 25.3 25.7 36.7 19.7 14.3 28.9 7.3 28.9 7.3s-4.3-31.3-54-46.3c.1-.2.2-.5.3-.7 3.1-6.2 6.4-14.4 9.7-23.5.1-.1.2-.1.3-.2 33.1 40.4 63.7 32.5 63.7 32.5s2.9-11.1-17.9-23.9c-17.8-10.9-39.7-10.4-45.4-10 0 0 0 0-.1 0 3-8.1 5.9-17 8.8-25.8 34.7 38.4 64.7 29.1 64.7 29.1s2.5-11.2-18.8-23z"/></g> -->
+                    <!-- </svg> -->
+
+                    <!-- NOCH ANPASSEN KEIN INLINE STYLE-->
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 200.4 383.6" style="enable-background:new 0 0 200.4 383.6;" xml:space="preserve">
+                    <style type="text/css">
+                        .leaves1 {
+                            fill:#A0DF93;
+                        }
+
+                        .leaves2 {
+                            fill:#A0DF93;
+                        }
+
+                        .leaves3 {
+                            fill:#A0DF93;
+                        }
+
+                        .leaves3 {
+                            fill:#A0DF93;
+                        }
+
+                        .stem {
+                            fill:#A0DF93;
+                        }
+
+                    </style>
+                    <g>
+                        <path class="leaves1" d="M65.1,332.8l-1.2-1.6C78,320,90.1,308.1,96,275.1c3.3-18.7,0.8-41.7-1.9-65.9c-2-17.8-4-36.1-3.5-52.7
+		                c1.2-38.1,46.5-158.6,47-159.8l1.9,0.7c-0.4,1.1-45.7,121.3-46.8,159.1c-0.5,16.4,1.5,34.7,3.5,52.4c2.7,24.4,5.2,47.5,1.8,66.5
+		                C92,309.1,79,321.8,65.1,332.8z"/>
+                    </g>
+                    <g>
+                        <path class="leaves1" d="M122.3,41.9c0,0-20.9-15.9-45.3-15.9c-24.4,0.1-27.7,11.1-27.7,11.1S71.8,60.5,122.3,41.9z"/>
+                    </g>
+                    <g>
+                        <path class="leaves2" d="M194,49.6c0,0-1.4-11.4-25.4-15.6c-24-4.2-47.4,8-47.4,8C167.8,68.8,194,49.6,194,49.6z"/>
+                    </g>
+                    <g>
+                        <path class="leaves3" d="M184.9,73.9c0,0-1.4-11.4-25.4-15.6s-47.4,8-47.4,8C158.8,93.2,184.9,73.9,184.9,73.9z"/>
+                    </g>
+                    <g>
+                        <path class="leaves1" d="M175.4,107.8c0,0-0.5-11.5-24.2-17.4s-47.8,4.5-47.8,4.5C147.9,125,175.4,107.8,175.4,107.8z"/>
+                    </g>
+                    <g>
+                        <path class="leaves2" d="M167.5,140.8c0,0,0.3-11.5-22.9-19.1c-23.2-7.6-48,1.2-48,1.2C138.8,156.1,167.5,140.8,167.5,140.8z"/>
+                    </g>
+                    <g>
+                        <path class="leaves3" d="M161.2,168c0,0,0.3-11.5-22.9-19.1s-48,1.2-48,1.2C132.6,183.3,161.2,168,161.2,168z"/>
+                    </g>
+                    <g>
+                        <path class="leaves3" d="M161.2,198.6c0,0,0.3-11.5-22.9-19.1s-48,1.2-48,1.2C132.6,213.9,161.2,198.6,161.2,198.6z"/>
+                    </g>
+                    <g>
+                        <path class="leaves2" d="M165.2,228.4c0,0-0.5-11.5-24.2-17.4c-23.7-5.9-47.8,4.6-47.8,4.6C137.8,245.6,165.2,228.4,165.2,228.4z"/>
+                    </g>
+                    <g>
+                        <path class="leaves1" d="M170.1,264.2c0,0-1.2-11.5-25.2-15.9s-47.5,7.4-47.5,7.4C143.7,283,170.1,264.2,170.1,264.2z"/>
+                    </g>
+                    <g>
+                        <path class="leaves2" d="M162.1,304.3c0,0-1.1-11.5-25-16.3s-47.6,6.8-47.6,6.8C135.5,322.8,162.1,304.3,162.1,304.3z"/>
+                    </g>
+                    <g>
+                        <path class="leaves2" d="M145.3,343.8c0,0,1.5-11.4-20.8-21.4c-22.3-9.9-47.9-3.8-47.9-3.8C115.3,356.1,145.3,343.8,145.3,343.8z"/>
+                    </g>
+                    <g>
+                        <path class="leaves1" d="M114.1,66.3c0,0-22.4-13.9-46.6-11.5S40.9,68.5,40.9,68.5S65.6,89.6,114.1,66.3z"/>
+                    </g>
+                    <g>
+                        <path class="leaves3" d="M106,94.9c0,0-22.3-14-46.6-11.7S32.8,96.8,32.8,96.8S57.4,118,106,94.9z"/>
+                    </g>
+                    <g>
+                        <path class="leaves1" d="M97.1,123c0,0-23.4-12-47.4-7.5c-24,4.4-25.3,15.9-25.3,15.9S50.8,150.3,97.1,123z"/>
+                    </g>
+                    <g>
+                        <path class="leaves3" d="M92.9,150.4c0,0-24.7-9-48-1.7s-23.1,18.8-23.1,18.8S50.3,183.1,92.9,150.4z"/>
+                    </g>
+                    <g>
+                        <path class="leaves2" d="M92.9,180.2c0,0-25.5-6.7-48,2.7c-22.5,9.4-21.3,20.9-21.3,20.9S53.5,216.7,92.9,180.2z"/>
+                    </g>
+                    <g>
+                        <path class="leaves3" d="M96.7,214.8c0,0-24.9-8.4-48-0.6s-22.7,19.4-22.7,19.4S54.8,248.5,96.7,214.8z"/>
+                    </g>
+                    <g>
+                        <path class="leaves1" d="M99.4,255.7c0,0-22.2-14.2-46.5-12.1S26.3,257,26.3,257S50.7,278.4,99.4,255.7z"/>
+                    </g>
+                    <g>
+                        <path class="leaves2" d="M93.5,295.1c0,0-19-18.2-43.2-21S21.5,282,21.5,282S41.2,307.8,93.5,295.1z"/>
+                    </g>
+                    <g>
+                        <path class="leaves3" d="M79.6,318.6c0,0-21.8-14.7-46.2-13.2c-24.4,1.5-27,12.7-27,12.7S30.3,340.1,79.6,318.6z"/>
+                    </g>
+                    <g>
+                        <path class="leaves1" d="M66.8,329.6c0,0-25.9,4.5-42.5,22.4s-10.7,27.9-10.7,27.9S46.1,379.3,66.8,329.6z"/>
+                    </g>
+                    </svg>
+
+                </div>
+
+                <div class="leave">
+                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 170.6 257.3" style="enable-background:new 0 0 170.6 257.3;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path class="leaves4" d="M63.5,26.2c0,0-20.5-7.7-40.8-2.5C2.5,29,1.8,38,1.8,38S25.1,51,63.5,26.2z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves6" d="M124.8,33c0,0-1.4-9-22.1-12.4c-20.7-3.3-40.4,6.1-40.4,6.1C102.9,48,124.8,33,124.8,33z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g> 
+                                <path class="leaves4" d="M127.5,54.5c0,0-1.4-9-22.1-12.4C84.7,38.8,65,48.3,65,48.3C105.5,69.6,127.5,54.5,127.5,54.5z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves6" d="M131.5,79.2c0,0-1.1-9-21.7-13.1c-20.6-4-40.6,4.7-40.6,4.7C109,93.5,131.5,79.2,131.5,79.2z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves6" d="M138.1,103.4c0,0-0.9-9-21.3-13.7c-20.4-4.6-40.7,3.6-40.7,3.6C115.2,117,138.1,103.4,138.1,103.4z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves4" d="M147.1,124.9c0,0-0.9-9-21.3-13.7c-20.4-4.6-40.7,3.6-40.7,3.6C124.2,138.6,147.1,124.9,147.1,124.9z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves6" d="M156.3,154.2c0,0,0.3-9.1-19.3-16.4c-19.7-7.3-40.8-1.8-40.8-1.8C131.8,164.6,156.3,154.2,156.3,154.2z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves4" d="M167.1,185.4c0,0,0.3-9.1-19.3-16.4c-19.7-7.3-40.8-1.8-40.8-1.8C142.6,195.9,167.1,185.4,167.1,185.4z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves5" d="M168.7,219.7c0,0,1.1-9-17.7-18.1c-18.9-9-40.5-5.5-40.5-5.5C143.4,228,168.7,219.7,168.7,219.7z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves4" d="M66.3,47.9c0,0-20.8-6.8-40.8-0.8C5.4,53.3,5.2,62.3,5.2,62.3S29,74.3,66.3,47.9z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves5" d="M71.1,70.7c0,0-20.9-6.3-40.8,0.1c-19.9,6.5-20,15.6-20,15.6S34.3,97.9,71.1,70.7z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves5" d="M78.4,93.2c0,0-21.1-5.7-40.8,1.4s-19.5,16.2-19.5,16.2S42.5,121.5,78.4,93.2z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves6" d="M86.8,114.6c0,0-21.6-3.2-40.4,6C27.7,130,28.9,139,28.9,139S54.4,146.9,86.8,114.6z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves4" d="M97.8,135.8c0,0-21.6-3.2-40.4,6c-18.8,9.3-17.5,18.3-17.5,18.3S65.3,168,97.8,135.8z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves6" d="M109.1,167c0,0-20.7-7.1-40.8-1.4c-20.1,5.8-20.5,14.8-20.5,14.8S71.3,192.8,109.1,167z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves5" d="M111,195.5c0,0-20.1-8.6-40.6-4.3s-21.5,13.3-21.5,13.3S71.5,218.6,111,195.5z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path class="leaves4" d="M108.5,206.8c0,0-20.8,6.7-33.5,23.3c-12.7,16.7-7.5,24.2-7.5,24.2S93.7,250.1,108.5,206.8z"/>
+                            </g>
+                        </g>
+                        <g>
+                            <path class="leaves5" d="M103.5,214.4l-1.2-1.6c0.1,0,6.1-4.7,7.9-17.4c3-21.4-8.4-48.5-18.5-67.5C56.3,61.1,62.1,0.6,62.2,0l2,0.2
+                                C64.1,0.8,58.4,60.7,93.5,127c14.9,28.1,21.2,51.3,18.6,68.9C110.2,209.3,103.8,214.2,103.5,214.4z"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="wrapper_animation">
+                <h1>Let’s get a green thumb.</h1>
+                <p class="heading_animate">We’ll show you.</p>
+            </div>
+
+            <p>Found yourself sitting in front of your window, adoring nature outside? Let’s bring nature into your home. We promise, this will cheer you up, and make grey days look way brighter. Our plants change on a monthly basis. Therefore we can promise, to have the highest quality of local plants and flowers.
+            </p>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="banner">
+            <img class="banner_bg" src="img/Background.png" alt="">
+            <img class="banner_chair" src="img/Chair.png" alt="">
+            <p class="banner_textBeginning">Having a boring room?</p>
+            <p class="banner_textEnd">... let's spice it up!</p>
+            <img class="banner_leave1" src="img/Leave_1.png" alt="">
+            <img class="banner_leave2" src="img/Leave_2.png" alt="">
+            <img class="banner_leave3" src="img/Leave_3.png" alt="">
+            <img class="banner_leave4" src="img/Leave_4.png" alt="">
+        </div>
+
+        <h2>Our green plants:</h2>
+
+        <p class="introduction">They’ll fit perfectly into your home and won’t die in 2 hours like others do. Make sure you follow our instructions and you will be as happy as your plants.</p>
+
+        <div class="wrapper_cards"> 
+            <div class="card">
+                <img src="img/ficus_lyrata.jpg" alt="Lyrata tree is showing in a light brown pot.">
+                <div class="inner_card"> 
+                    <h3>Lyrata tree</h3>
+
+                    <ul>
+                        <li>needs bright, filtered light</li>
+                        <li>keep soil moist</li>
+                        <li>cold will harm it</li>
+                        <li>grows rapidly </li>
+                    </ul>
+
+                    <p class="price">€ 30,-</p>
+                    
+                    <button class="btn">BUY THIS!</button>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/monstera.jpg" alt="Monstera plant is showing in a light brown pot.">
+
+                <div class="inner_card"> 
+                    <h3>Monstera</h3>
+
+                    <ul>
+                        <li>tolerates low light</li>
+                        <li>avoid strong, direct sunlight</li>
+                        <li>is drought tolerant</li>
+                        <li>gently mist it once a week</li>
+                    </ul>
+
+                    <p class="price">€ 20,-</p>
+
+                    <button>BUY THIS!</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/sansevieria.jpg" alt="Sansevierias plant is showing in a light brown pot.">
+
+                <div class="inner_card"> 
+                    <h3>Sansevierias</h3>
+
+                    <ul>
+                        <li>prefers medium light</li>
+                        <li>does well in bathrooms</li> 
+                        <li>don’t tolerate frost</li>
+                        <li>highly pest-resistant</li>
+                    </ul>
+
+                    <p class="price">€ 25,-</p>
+
+                    <button>BUY THIS!</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/Sukkulenten.jpg" alt="Sukkulenten cactus is showing in a light brown pot.">
+
+                <div class="inner_card"> 
+                    <h3>Sukkulenten</h3>
+
+                    <ul>
+                        <li>keep in direct sunlight</li>
+                        <li>don’t water it too much</li>
+                        <li>water it once a week</li>
+                        <li>easy to breed</li>
+                    </ul>
+
+                    <p class="price">€ 10,-</p>
+
+                    <button>BUY THIS!</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/aloevera.jpg" alt="Aloevera is showing in a light brown pot.">
+
+                <div class="inner_card"> 
+                    <h3>Aloevera</h3>
+
+                    <ul>
+                        <li>use a pot as wide as deep</li>
+                        <li>keep in indirect light</li>
+                        <li>keep in a warm place</li>
+                        <li>water about every 3 weeks</li>
+                    </ul>
+
+                    <p class="price">€ 20,-</p>
+
+                    <button>BUY THIS!</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/efeutute.jpg" alt="Efeutute is showing in a light brown pot.">
+
+                <div class="inner_card"> 
+                    <h3>Efeutute</h3>
+
+                    <ul>
+                        <li>keep in direct light</li>
+                        <li>tolerates 15 degrees celsius</li>
+                        <li>highly pest-resistant</li>
+                        <li>rapid growers</li>
+                    </ul>
+
+                    <p class="price">€ 25,-</p>
+
+                    <button>BUY THIS!</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>Need some extra help?</h2>
+
+        <p>Do you want to get some extra tips how to keep your plants and flowes at home lush and happy? Just sign up to get our weekly newsletter about our favorite thing in the world.</p>
+
+        <div class="row">
+            <!-- <form action="index.html" method="POST"> -->
+                <div class="animate_input">
+                    <label for="fullName">Full Name</label>
+                    <input class="input" id="fullName" type="text" placeholder="John Doe" />
+                </div>
+
+                <div class="animate_input">
+                    <label for="mail">E-Mail Adress</label>
+                    <input class="input" id="mail" type="text" placeholder="john.doe@gmail.com" />
+                </div>
+
+                <button class="animate_button">SUBMIT!</button>
+            <!-- </form> -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper_footer">
+            <a href="#">
+                <p>ABG</p>
+            </a>
+            
+            <a href="#">
+                <p>Impressum</p>
+            </a>
+
+            <a href="#">
+                <p>Contact Us</p>
+            </a>
+        </div>
+    </footer>
+
+    <!-- GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+
+    <script src="Script/script.js"></script>
+
+</body>
+</html>

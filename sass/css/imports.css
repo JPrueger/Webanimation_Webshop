@@ -1,0 +1,396 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Merriweather", serif;
+}
+
+li {
+  list-style: none;
+  font-family: "Merriweather", serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  /* Meldung: "Invalid separator in shape definition. It must be a comma." - code für Visually Hidden von Unterricht übernommen */
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+main, footer {
+  padding-left: 70px;
+}
+
+h1, .heading_animate {
+  font-size: 65px;
+  width: 70%;
+  color: white;
+  margin: 0;
+}
+
+header p {
+  color: white;
+}
+
+.background_header {
+  padding-left: 70px;
+  position: relative;
+}
+
+header {
+  background-color: #141C2F;
+  min-height: 770px;
+  margin-bottom: 50px;
+}
+
+.wrapper_leave_img {
+  display: flex;
+  right: 5%;
+  position: absolute;
+  top: -150px;
+}
+
+.wrapper_leave_img svg {
+  width: 180px;
+}
+
+.leave svg {
+  width: 220px;
+}
+
+.leaves4 {
+  fill: #42836B;
+}
+
+.leaves5 {
+  fill: #42836B;
+}
+
+.leaves6 {
+  fill: #42836B;
+}
+
+.wrapper_nav {
+  padding-left: 70px;
+  display: flex;
+}
+
+.wrapper_nav a {
+  transform: translateY(25%);
+}
+
+.wrapper_header a:hover {
+  color: #42836B;
+}
+
+.wrapper_header {
+  display: flex;
+  background-color: white;
+  margin-bottom: 150px;
+  height: 70px;
+  justify-content: space-between;
+  padding-right: 60px;
+}
+
+nav ol {
+  display: flex;
+}
+
+nav ol li {
+  margin-right: 30px;
+  transform: translateY(140%);
+}
+
+.my_details ol {
+  display: flex;
+}
+
+.my_details ol li {
+  margin-right: 30px;
+  transform: translateY(140%);
+}
+
+.my_details ol li:last-child {
+  margin-right: 0px;
+}
+
+.overlay {
+  z-index: 10;
+  position: absolute;
+  width: 100vw;
+  max-height: 100vh;
+}
+
+.overlay_leave {
+  z-index: 15;
+  position: absolute;
+  margin: auto;
+  width: 200px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.introduction {
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: #141C2F;
+  color: white;
+  padding: 10px 70px;
+  border: 2px solid #141C2F;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: white;
+  color: #141C2F;
+  padding: 10px 70px;
+  border: 2px solid #141C2F;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+}
+
+p {
+  width: 40%;
+  font-family: "Merriweather", serif;
+}
+
+.card {
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.2);
+  border-radius: 5px;
+  flex-basis: 30%;
+  margin-bottom: 45px;
+}
+
+.wrapper_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.wrapper_cards img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.inner_card {
+  padding-left: 30px;
+}
+
+.card ul {
+  padding-left: 0;
+}
+
+.card h3, .price {
+  font-size: 24px;
+}
+
+footer {
+  background-color: #141C2F;
+}
+
+.wrapper_footer {
+  display: flex;
+}
+
+.wrapper_footer p {
+  width: 100%;
+  color: white;
+}
+
+.wrapper_footer p:hover {
+  text-decoration: underline;
+}
+
+.wrapper_footer p {
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.wrapper_footer a:hover {
+  color: #42836B;
+}
+
+input[type=text],
+input[type=email] {
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.row {
+  width: 50%;
+  margin-bottom: 70px;
+}
+
+.input {
+  padding: 20px 0 20px 5px;
+  font-family: "Merriweather", serif;
+  background: white;
+  border-radius: 3px;
+  text-indent: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+label {
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.input:focus,
+.input:active {
+  color: #418171;
+  text-indent: 0;
+  background: white;
+}
+
+::placeholder {
+  font-size: 13px;
+}
+
+.wrapper_animation {
+  margin: 0;
+  width: 90%;
+  border-bottom: 6px solid #141C2F;
+  overflow: hidden;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 150px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.loader__element {
+  border-radius: 100%;
+  border: 5px solid #42836B;
+  margin: 10px;
+}
+
+@keyframes loading {
+  100% {
+    transform: scale(2);
+  }
+}
+.loader__element:nth-child(1) {
+  animation: loading 0.6s ease-in-out alternate infinite;
+}
+
+.loader__element:nth-child(2) {
+  animation: loading 0.6s ease-in-out 0.2s alternate infinite;
+}
+
+.loader__element:nth-child(3) {
+  animation: loading 0.6s ease-in-out 0.4s alternate infinite;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: 1131px;
+  height: 357px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.banner_bg {
+  position: absolute;
+}
+
+.banner_chair {
+  position: absolute;
+}
+
+.banner_leave1 {
+  position: absolute;
+  opacity: 0;
+}
+
+.banner_leave2 {
+  position: absolute;
+  opacity: 0;
+}
+
+.banner_leave3 {
+  position: absolute;
+  opacity: 0;
+}
+
+.banner_leave4 {
+  position: absolute;
+  opacity: 0;
+}
+
+.banner_textBeginning {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.banner_textEnd {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.banner_textBeginning {
+  font-family: "Merriweather", serif;
+  font-size: 29px;
+}
+
+.banner_textEnd {
+  font-family: "Merriweather", serif;
+  font-size: 29px;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=imports.css.map */
